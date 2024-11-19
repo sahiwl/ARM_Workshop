@@ -9,17 +9,30 @@ Project File Date:  11/16/2024
 <h2>Output:</h2>
 Rebuild target 'Target 1'
 assembling Startup.s...
-compiling program7.c...
-linking...
-Program Size: Code=676 RO-data=16 RW-data=0 ZI-data=1256  
-FromELF: creating hex file...
-".\LCDA2.axf" - 0 Error(s), 0 Warning(s).
- RO-data=32 RW-data=20 ZI-data=1260  
-FromELF: creating hex file...
-".\LCDA2.axf" - 0 Error(s), 1 Warning(s).
-compiling program7.c...
-"program7.c" - 0 Error(s), 0 Warning(s).
-ds without a newline
+compiling uart5.c...
+uart5.c(47): warning:  #111-D: statement is unreachable
+                                                                        transmitString("LED2 is on \n");
+uart5.c(54): warning:  #1-D: last line of file ends without a newline
   }
-program7.c: 1 warning, 0 errors
-"program7.c" - 0 Error(s), 1 Warning(s).
+uart5.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=864 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+".\LCDA2.axf" - 0 Error(s), 2 Warning(s).
+compiling uart5.c...
+uart5.c(47): warning:  #111-D: statement is unreachable
+                                                                        transmitString("LED2 is on \n");
+uart5.c(54): warning:  #1-D: last line of file ends without a newline
+  }
+uart5.c: 2 warnings, 0 errors
+"uart5.c" - 0 Error(s), 2 Warning(s).
+ 'C:\Users\Student\Documents\LCDA2.axf'. Debugger aborted !
+compiling uart5.c...
+uart5.c(47): warning:  #111-D: statement is unreachable
+                                                                        transmitString("LED2 is on");
+uart5.c(54): warning:  #1-D: last line of file ends without a newline
+  }
+uart5.c: 2 warnings, 0 errors
+"uart5.c" - 0 Error(s), 2 Warning(s).
+c: 2 warnings, 3 errors
+"program7.c" - 3 Error(s), 2 Warning(s).
